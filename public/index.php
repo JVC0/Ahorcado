@@ -4,13 +4,18 @@ declare(strict_types=1);
 
 
 
-use public\Storage as Storage;
-use public\WordProvider as WordProvider;
-use public\Renderer as Renderer;
-use public\Game as Game;
+include_once __DIR__ . "/../src/Storage.php";
+include_once __DIR__ . "/../src/WordProvider.php";
+include_once __DIR__ . "/../src/Renderer.php";
+include_once __DIR__ . "/../src/Game.php";
+
+use App\Storage as Storage;
+use App\WordProvider as WordProvider;
+use App\Renderer as Renderer;
+use App\Game as Game;
 
 $storage = new Storage('ahorcado');
-$provider = new WordProvider(__DIR__ . '/../data/words.txt');
+$wordProvider = new WordProvider(__DIR__ . '/../data/words.txt');
 $renderer = new Renderer();
 
 

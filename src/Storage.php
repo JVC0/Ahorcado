@@ -2,8 +2,7 @@
 
 declare(strict_types=1);
 
-namespace public;
-
+namespace App;
 class Storage
 {
     private string $key;
